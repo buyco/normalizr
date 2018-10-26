@@ -21,6 +21,7 @@
     "build:development": "NODE_ENV=development rollup -c",
     "build:production": "NODE_ENV=production rollup -c",
     "clean": "rimraf dist",
+    "postinstall": "npm run build",
     "flow": "flow",
     "lint": "eslint --fix .",
     "lint:ci": "eslint .",
@@ -66,5 +67,8 @@
   "lint-staged": {
     "src/**/*.js": ["test", "git add"],
     "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
+  "": {
+    "normalizr": "https://github.com/buyco/normalizr.git"
   }
 }

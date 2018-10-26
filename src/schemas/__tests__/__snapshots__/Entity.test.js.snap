@@ -311,6 +311,29 @@ Object {
 }
 `;
 
+exports[`EntitySchema normalization postProcessStrategy is applied to every entity after being normalized 1`] = `
+Object {
+  "entities": Object {
+    "rooms": Object {
+      "1": Immutable.room {
+        "id": 1,
+        "title": "parent",
+        "user": 2,
+        "created": 2017-05-07T20:31:28.307Z,
+      },
+    },
+    "users": Object {
+      "2": Immutable.user {
+        "id": 2,
+        "name": "child",
+        "created": 2017-05-07T20:31:28.307Z,
+      },
+    },
+  },
+  "result": 1,
+}
+`;
+
 exports[`EntitySchema normalization processStrategy can use a custom processing strategy 1`] = `
 Object {
   "entities": Object {

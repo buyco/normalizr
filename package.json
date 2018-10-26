@@ -21,7 +21,6 @@
     "build:development": "NODE_ENV=development rollup -c",
     "build:production": "NODE_ENV=production rollup -c",
     "clean": "rimraf dist",
-    "postinstall": "npm run build",
     "flow": "flow",
     "lint": "eslint --fix .",
     "lint:ci": "eslint .",

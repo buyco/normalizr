@@ -12,6 +12,7 @@ declare namespace schema {
     idAttribute?: string | SchemaFunction
     mergeStrategy?: MergeFunction
     processStrategy?: StrategyFunction
+    postProcessStrategy?: StrategyFunction
   }
 
   export class Entity {
